@@ -10,12 +10,15 @@ Attribute VB_Name = "Project"
 '
 ' The export should be ran either on `Workbook_AfterSave` event. Example:
 '
+'  ' Export all code after every save.
+'  ' Ideally in a project you would only want to do this with developers.
 '   Private Sub Workbook_AfterSave(ByVal Success As Boolean)
-'       ExportComponentsToSourceFolders
+'       Project.ExportComponentsToSourceFolders
+'       Project.ExportReferencesToConfigFile
 '   End Sub
 '
 '
-' Note, this module can't use functions or code from other modules
+' WARNING!! this module can't use functions or code from other modules
 ' as this module will delete those for importing and won't be able to be accessed.
 '
 '

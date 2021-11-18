@@ -1,4 +1,4 @@
-Attribute VB_Name = "Project_Tests"
+Attribute VB_Name = "Project_tests"
 ''
 ' Tests for the Project Module.
 '

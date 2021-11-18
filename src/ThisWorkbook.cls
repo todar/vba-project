@@ -18,6 +18,8 @@ Attribute VB_Exposed = True
 Option Explicit
 
 ' Export all code after every save.
+' Ideally in a project you would only want to do this with developers.
 Private Sub Workbook_AfterSave(ByVal Success As Boolean)
     Project.ExportComponentsToSourceFolders
+    Project.ExportReferencesToConfigFile
 End Sub
